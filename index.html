@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Météo</title>
+    <meta name="description" content="Application Météo">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Météo</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <input id="textRechercher" type="text" class="search" placeholder="Ville ou Code Postal">
+                        <ul id="cityList" class="list-group d-none">
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <button id="btnRechercher" class="btn btn-primary" type="button">Rechercher</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead">
+        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/soleil.png">
+            <h1 id="cityTitle"></h1>
+            <h2 id="date" class="font-weight-light mb-0"></h2>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container text-center">
+            <div id="heures" class="row">
+            </div>
+        </div>
+        <div class="container text-center">
+            <div id="temperature" class="row">
+            </div>
+        </div>
+    </section>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright ©&nbsp;Tahina 2023</small></div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/meteo.js"></script>
+</body>
+
+</html>
